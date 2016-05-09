@@ -1,0 +1,3 @@
+[submodule "c3-pro-carework"]
+	path = c3-pro-carework
+	url = https://github.com/chb/c3-pro-care-ios-framework.git

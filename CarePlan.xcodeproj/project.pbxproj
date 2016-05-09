@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		EEEA740D1CDCEB3C0026BBD4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEA740C1CDCEB3C0026BBD4 /* AppDelegate.swift */; };
-		EEEA740F1CDCEB3C0026BBD4 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEA740E1CDCEB3C0026BBD4 /* FirstViewController.swift */; };
-		EEEA74111CDCEB3C0026BBD4 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEA74101CDCEB3C0026BBD4 /* SecondViewController.swift */; };
+		EEEA740F1CDCEB3C0026BBD4 /* CareOverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEA740E1CDCEB3C0026BBD4 /* CareOverviewViewController.swift */; };
 		EEEA74141CDCEB3C0026BBD4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEEA74121CDCEB3C0026BBD4 /* Main.storyboard */; };
 		EEEA74161CDCEB3C0026BBD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEEA74151CDCEB3C0026BBD4 /* Assets.xcassets */; };
 		EEEA74191CDCEB3C0026BBD4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEEA74171CDCEB3C0026BBD4 /* LaunchScreen.storyboard */; };
 		EEEA74241CDCEB3C0026BBD4 /* CarePlanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEA74231CDCEB3C0026BBD4 /* CarePlanTests.swift */; };
+		EEEA746B1CDCECCF0026BBD4 /* C3PROCare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEEA745A1CDCEBED0026BBD4 /* C3PROCare.framework */; };
+		EEEA746C1CDCECCF0026BBD4 /* C3PROCare.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EEEA745A1CDCEBED0026BBD4 /* C3PROCare.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EEEA74711CDCED8B0026BBD4 /* careplan-example-overweight.json in Resources */ = {isa = PBXBuildFile; fileRef = EEEA74701CDCED8B0026BBD4 /* careplan-example-overweight.json */; };
+		EEEA74991CDE38B80026BBD4 /* CareParticipantsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEA74981CDE38B80026BBD4 /* CareParticipantsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,13 +27,55 @@
 			remoteGlobalIDString = EEEA74081CDCEB3C0026BBD4;
 			remoteInfo = CarePlan;
 		};
+		EEEA74591CDCEBED0026BBD4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EEEA74541CDCEBED0026BBD4 /* c3-pro-carework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EEEA743A1CDCEBEC0026BBD4;
+			remoteInfo = "c3-pro-carework";
+		};
+		EEEA745B1CDCEBED0026BBD4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EEEA74541CDCEBED0026BBD4 /* c3-pro-carework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EEEA74441CDCEBED0026BBD4;
+			remoteInfo = "c3-pro-careworkTests";
+		};
+		EEEA74691CDCECC00026BBD4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EEEA74541CDCEBED0026BBD4 /* c3-pro-carework.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = EEEA74391CDCEBEC0026BBD4;
+			remoteInfo = "c3-pro-carework";
+		};
+		EEEA746D1CDCECCF0026BBD4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EEEA74541CDCEBED0026BBD4 /* c3-pro-carework.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = EEEA74391CDCEBEC0026BBD4;
+			remoteInfo = "c3-pro-carework";
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		EEEA746F1CDCECCF0026BBD4 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				EEEA746C1CDCECCF0026BBD4 /* C3PROCare.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		EE786F321CE0D5D300C29D8B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		EEEA74091CDCEB3C0026BBD4 /* CarePlan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarePlan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEEA740C1CDCEB3C0026BBD4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EEEA740E1CDCEB3C0026BBD4 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		EEEA74101CDCEB3C0026BBD4 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		EEEA740E1CDCEB3C0026BBD4 /* CareOverviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareOverviewViewController.swift; sourceTree = "<group>"; };
 		EEEA74131CDCEB3C0026BBD4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EEEA74151CDCEB3C0026BBD4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EEEA74181CDCEB3C0026BBD4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -38,6 +83,9 @@
 		EEEA741F1CDCEB3C0026BBD4 /* CarePlanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarePlanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEEA74231CDCEB3C0026BBD4 /* CarePlanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarePlanTests.swift; sourceTree = "<group>"; };
 		EEEA74251CDCEB3C0026BBD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EEEA74541CDCEBED0026BBD4 /* c3-pro-carework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "c3-pro-carework.xcodeproj"; path = "c3-pro-carework/c3-pro-carework.xcodeproj"; sourceTree = "<group>"; };
+		EEEA74701CDCED8B0026BBD4 /* careplan-example-overweight.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "careplan-example-overweight.json"; sourceTree = "<group>"; };
+		EEEA74981CDE38B80026BBD4 /* CareParticipantsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CareParticipantsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEEA746B1CDCECCF0026BBD4 /* C3PROCare.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,9 +110,11 @@
 		EEEA74001CDCEB3C0026BBD4 = {
 			isa = PBXGroup;
 			children = (
+				EE786F321CE0D5D300C29D8B /* README.md */,
 				EEEA740B1CDCEB3C0026BBD4 /* CarePlan */,
 				EEEA74221CDCEB3C0026BBD4 /* CarePlanTests */,
 				EEEA740A1CDCEB3C0026BBD4 /* Products */,
+				EEEA74541CDCEBED0026BBD4 /* c3-pro-carework.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,12 +130,10 @@
 		EEEA740B1CDCEB3C0026BBD4 /* CarePlan */ = {
 			isa = PBXGroup;
 			children = (
+				EEEA74701CDCED8B0026BBD4 /* careplan-example-overweight.json */,
 				EEEA740C1CDCEB3C0026BBD4 /* AppDelegate.swift */,
-				EEEA740E1CDCEB3C0026BBD4 /* FirstViewController.swift */,
-				EEEA74101CDCEB3C0026BBD4 /* SecondViewController.swift */,
-				EEEA74121CDCEB3C0026BBD4 /* Main.storyboard */,
-				EEEA74151CDCEB3C0026BBD4 /* Assets.xcassets */,
-				EEEA74171CDCEB3C0026BBD4 /* LaunchScreen.storyboard */,
+				EEEA742F1CDCEB840026BBD4 /* ViewController */,
+				EEEA742E1CDCEB530026BBD4 /* UI */,
 				EEEA741A1CDCEB3C0026BBD4 /* Info.plist */,
 			);
 			path = CarePlan;
@@ -99,6 +148,34 @@
 			path = CarePlanTests;
 			sourceTree = "<group>";
 		};
+		EEEA742E1CDCEB530026BBD4 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				EEEA74121CDCEB3C0026BBD4 /* Main.storyboard */,
+				EEEA74171CDCEB3C0026BBD4 /* LaunchScreen.storyboard */,
+				EEEA74151CDCEB3C0026BBD4 /* Assets.xcassets */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		EEEA742F1CDCEB840026BBD4 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				EEEA740E1CDCEB3C0026BBD4 /* CareOverviewViewController.swift */,
+				EEEA74981CDE38B80026BBD4 /* CareParticipantsViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		EEEA74551CDCEBED0026BBD4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EEEA745A1CDCEBED0026BBD4 /* C3PROCare.framework */,
+				EEEA745C1CDCEBED0026BBD4 /* c3-pro-careworkTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -109,10 +186,13 @@
 				EEEA74051CDCEB3C0026BBD4 /* Sources */,
 				EEEA74061CDCEB3C0026BBD4 /* Frameworks */,
 				EEEA74071CDCEB3C0026BBD4 /* Resources */,
+				EEEA746F1CDCECCF0026BBD4 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				EEEA746A1CDCECC00026BBD4 /* PBXTargetDependency */,
+				EEEA746E1CDCECCF0026BBD4 /* PBXTargetDependency */,
 			);
 			name = CarePlan;
 			productName = CarePlan;
@@ -167,6 +247,12 @@
 			mainGroup = EEEA74001CDCEB3C0026BBD4;
 			productRefGroup = EEEA740A1CDCEB3C0026BBD4 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = EEEA74551CDCEBED0026BBD4 /* Products */;
+					ProjectRef = EEEA74541CDCEBED0026BBD4 /* c3-pro-carework.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				EEEA74081CDCEB3C0026BBD4 /* CarePlan */,
@@ -175,11 +261,29 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		EEEA745A1CDCEBED0026BBD4 /* C3PROCare.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = C3PROCare.framework;
+			remoteRef = EEEA74591CDCEBED0026BBD4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EEEA745C1CDCEBED0026BBD4 /* c3-pro-careworkTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "c3-pro-careworkTests.xctest";
+			remoteRef = EEEA745B1CDCEBED0026BBD4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		EEEA74071CDCEB3C0026BBD4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEEA74711CDCED8B0026BBD4 /* careplan-example-overweight.json in Resources */,
 				EEEA74191CDCEB3C0026BBD4 /* LaunchScreen.storyboard in Resources */,
 				EEEA74161CDCEB3C0026BBD4 /* Assets.xcassets in Resources */,
 				EEEA74141CDCEB3C0026BBD4 /* Main.storyboard in Resources */,
@@ -200,9 +304,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EEEA74111CDCEB3C0026BBD4 /* SecondViewController.swift in Sources */,
+				EEEA74991CDE38B80026BBD4 /* CareParticipantsViewController.swift in Sources */,
 				EEEA740D1CDCEB3C0026BBD4 /* AppDelegate.swift in Sources */,
-				EEEA740F1CDCEB3C0026BBD4 /* FirstViewController.swift in Sources */,
+				EEEA740F1CDCEB3C0026BBD4 /* CareOverviewViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,6 +325,16 @@
 			isa = PBXTargetDependency;
 			target = EEEA74081CDCEB3C0026BBD4 /* CarePlan */;
 			targetProxy = EEEA74201CDCEB3C0026BBD4 /* PBXContainerItemProxy */;
+		};
+		EEEA746A1CDCECC00026BBD4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "c3-pro-carework";
+			targetProxy = EEEA74691CDCECC00026BBD4 /* PBXContainerItemProxy */;
+		};
+		EEEA746E1CDCECCF0026BBD4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "c3-pro-carework";
+			targetProxy = EEEA746D1CDCECCF0026BBD4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -392,6 +506,7 @@
 				EEEA742A1CDCEB3C0026BBD4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EEEA742B1CDCEB3C0026BBD4 /* Build configuration list for PBXNativeTarget "CarePlanTests" */ = {
 			isa = XCConfigurationList;
@@ -400,6 +515,7 @@
 				EEEA742D1CDCEB3C0026BBD4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
