@@ -4,6 +4,15 @@ CarePlan ⟷ CareKit
 Testing app to work with FHIR `CarePlan` in a CareKit app.
 Created during the [FHIR Connectathon #12](http://wiki.hl7.org/index.php?title=FHIR_Connectathon_12) in Montréal in the _Workflow_ track.
 
+Most stuff happens in `AppDelegate` and in `CarePlanController`; the latter lives in the framework, which is added as a submodule.
+Look at `loadCarePlan()`, where you can toggle whether to load the bundled plan or the remote one, used during the connectathon.
+
+The bottom half of `AppDelegate` has some methods that perform connectathon-specific tasks.
+
+```bash
+git clone --recursive https://github.com/p2/CarePlanCareKitApp.git
+```
+
 
 Workflow
 ========
